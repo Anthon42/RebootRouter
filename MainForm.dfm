@@ -1,0 +1,65 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 151
+  ClientWidth = 474
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  TextHeight = 13
+  object lblStatus: TLabel
+    Left = 24
+    Top = 24
+    Width = 426
+    Height = 29
+    Alignment = taCenter
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object btnStart: TButton
+    Left = 104
+    Top = 88
+    Width = 100
+    Height = 40
+    Caption = #1057#1090#1072#1088#1090
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnStartClick
+  end
+  object btnStop: TButton
+    Left = 270
+    Top = 88
+    Width = 100
+    Height = 40
+    Caption = #1057#1090#1086#1087
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnStopClick
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 216
+    Top = 72
+  end
+end
